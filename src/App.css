@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container {
+  height: 500px;
+  width: 350px;
+}
+
+.app-heading {
+  padding: 4px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.input-box-todo {
+  margin-left: 10px;
+  width: 75%;
+  height: 45px;
+  border-radius: 14px;
+  border: 1px solid black;
+  padding-left: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+
+.add-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: #316fc1;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 8px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+  transition: 0.3s;
+}
+
+.add-btn:active {
+  box-shadow: none;
+}
+
+/* List item styles */
+.list-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.list-item {
+  list-style-type: none;
+  border: 2px solid #fff;
+  color: white;
+  padding: 3px;
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  /* Increase the font size here */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #c4c4c4;
+}
+
+/* Icons */
+.icons {
+  position: absolute;
+  right: 10px;
+}
+
+.icons i {
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+}
+
+.icon-delete:hover {
+  color: red;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.popup-inner {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.popup-inner textarea {
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.popup-inner button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-inner button.save {
+  background-color: #28a745;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.popup-inner button.cancel {
+  background-color: #dc3545;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-heading {
+  padding-top: 7%;
+}
+
+.search-box {
+  width: 90%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
