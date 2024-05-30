@@ -1,6 +1,6 @@
 React To-Do List
 
-A simple and interactive To-Do List application built with React. \n
+A simple and interactive To-Do List application built with React. </br>
 This application allows users to add, remove, and mark tasks as completed. 
 It includes validation for task input, dynamic task display, and offers optional sorting and filtering of tasks. 
 Additionally, it integrates with localStorage to save the tasks persistently.
