@@ -21,7 +21,7 @@ Ensure you have Node.js and npm installed on your machine. You can download them
 
 Installation : </br>
 1.Clone the repository: </br>
- <pre> </pre>git clone https://github.com/hetshah72/Todo_react </br>
+ git clone https://github.com/hetshah72/Todo_react </br>
 2.Install dependencies:</br>
  npm install</br>
 3.Start the development server:</br>
