@@ -21,11 +21,11 @@ Ensure you have Node.js and npm installed on your machine. You can download them
 
 Installation : </br>
 1.Clone the repository: </br>
-    <&nbsp> git clone https://github.com/hetshah72/Todo_react </br>
+ <pre> </pre>git clone https://github.com/hetshah72/Todo_react </br>
 2.Install dependencies:</br>
-    <&nbsp> npm install</br>
+ npm install</br>
 3.Start the development server:</br>
-   <&nbsp> npm start</br>
+npm start</br>
 The application should now be running on http://localhost:3000.</br>
 
 https://github.com/hetshah72/Todo_react/assets/114429065/e6d23891-d0be-4c73-a605-70d4f3813ce7
